@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+p {
+    color: #332c2c;
+}
+
+.container {
+    max-width: 1270px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ed1c2f;
+    margin: 20px 0;
+}
+
+.main,
+.aside {
+    padding: 0 15px;
+}
+
+.main {
+    width: calc(100% / 3 * 2);
+}
+
+.aside {
+    width: calc(100% / 3);
+}
+
+/**** MAIN ****/
+.article__img {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.article_text {
+    font-size: 14px;
+    text-align: justify;
+}
+
+/**** ASIDE ****/
+/* information about collection */
+.needed-actual-value {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.actual-value {
+    font-weight: 700;
+    width: 40%;
+    position: relative;
+}
+
+#actual-value {
+    font-size: 40px;
+}
+
+.coin-sign {
+    font-size: 25px;
+    position: absolute;
+    top: -7px;
+}
+
+.needed-value {
+    width: 47%;
+}
+
+/* progress bar */
+.progressbar {
+    width: 100%;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progressbar-value {
+    background-color: red;
+    height: inherit;
+}
+
+#percent-number {
+    color: #fff;
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* donnation button */
+.btn-vrap {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    border: 5px solid #ed1c2f;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.btn-red {
+    background-color: #ed1c2f;
+    border: 5px solid #ed1c2f;
+}
+
+.btn-red:hover {
+    background-color: #fff;
+    color: #ed1c2f;
+}
+
+.btn-red span {
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.btn-red span:before {
+    content: '\f054';
+    display: inline-block;
+    font-family: FontAwesome;
+    color: inherit;
+    font-size: 12px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* days left */
+.donat-day-left {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.donat-day-left p {
+    width: 50%;
+
+}
+
+/* aside boxes 1 */
+.aside-box {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.ad {
+    margin-bottom: 40px;
+}
+
+.ad-link {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* aside img-link */
+.ad-link__img {
+    width: 40%;
+}
+
+.ad-link__img img {
+    max-width: 100%;
+}
+
+/* aside boxes text */
+.ad-link__text {
+    width: 60%;
+}
+
+.ad-link__text p {
+    margin-bottom: 10px;
+}
+
+.ad-link__text a {
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-size: 15px;
+    color: #332c2c;
+}
+
+.ad-link__text-explanation {
+    padding-left: 30px;
+}
+
+.ad__cagnotte {
+    background-color: #dce9d9;
+    padding: 10px;
+}
+
+.ad__cagnotte h4,
+.ad__cagnotte p {
+    padding-left: 50px;
+    position: relative;
+}
+
+.ad__cagnotte h4 {
+    color: #24ae5f;
+}
+
+.ad__cagnotte p::before {
+    font-family: FontAwesome;
+    content: '\f058';
+    font-size: 35px;
+    color: #24ae5f;
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+}
+
+/* aside boxes 2 -> social network buttons */
+.call-to-share {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+
+.call-to-share::before {
+    content: '\f054';
+    display: inline-block;
+    font-family: FontAwesome;
+    color: inherit;
+    font-size: 12px;
+    position: absolute;
+    left: 39px;
+    top: 7px;
+}
+
+.social-button,
+.call-to-share {
+    margin-bottom: 10px;
+}
+
+.btn-fb {
+    background-color: #3b5998;
+    border-color: #3b5998;
+}
+
+.btn-fb:hover {
+    background-color: #fff;
+    color: #3b5998;
+}
+
+.btn-tw {
+    background-color: #00aae4;
+    border-color: #00aae4;
+}
+
+.btn-tw:hover {
+    background-color: #fff;
+    color: #00aae4;
+}
+
+.btn-mail {
+    background-color: #fff;
+    border-color: #dfdfdf;
+    color: #332c2c;
+}
+
+.btn-mail:hover {
+    border-color: #332c2c;
+}
