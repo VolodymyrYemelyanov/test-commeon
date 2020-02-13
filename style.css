@@ -38,9 +38,13 @@ h1 {
 }
 
 /**** MAIN ****/
-.article__img {
+.article__img-vrap {
     text-align: center;
     margin-bottom: 30px;
+}
+
+.article__img {
+    max-width: 100%;
 }
 
 .article_text {
@@ -58,7 +62,8 @@ h1 {
 
 .actual-value {
     font-weight: 700;
-    width: 40%;
+    max-width: 128px;
+    width: 100%;
     position: relative;
 }
 
@@ -73,7 +78,8 @@ h1 {
 }
 
 .needed-value {
-    width: 47%;
+    max-width: 170px;
+    width: 100%;
 }
 
 /* progress bar */
@@ -129,14 +135,14 @@ h1 {
     color: #ed1c2f;
 }
 
-.btn-red span {
+.btn span {
     display: inline-block;
     font-size: 20px;
     position: relative;
     padding-left: 20px;
 }
 
-.btn-red span:before {
+.btn span:before {
     content: '\f054';
     display: inline-block;
     font-family: FontAwesome;
@@ -149,16 +155,23 @@ h1 {
 }
 
 /* days left */
-.donat-day-left {
+.donat-nmbr-day-left {
     display: flex;
     flex-wrap: wrap;
     margin: 20px 0;
 }
 
-.donat-day-left p {
+.donat-nmbr-day-left p {
     width: 50%;
-
+    display: flex;
+    align-items: center;
 }
+
+.donat-nmbr-day-left img {
+    width: 37px;
+    margin-right: 7%;
+}
+
 
 /* aside boxes 1 */
 .aside-box {
@@ -204,25 +217,38 @@ h1 {
 }
 
 .ad-link__text-explanation {
-    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.ad-link__text-explanation img {
+    width: 30px;
+    margin-right: 5%;
 }
 
 .ad__cagnotte {
     background-color: #dce9d9;
     padding: 10px;
+    position: relative;
 }
 
 .ad__cagnotte h4,
 .ad__cagnotte p {
-    padding-left: 50px;
-    position: relative;
+    padding-left: 40px;
 }
 
 .ad__cagnotte h4 {
     color: #24ae5f;
 }
 
-.ad__cagnotte p::before {
+.ad__cagnotte img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+}
+
+/* .ad__cagnotte p::before {
     font-family: FontAwesome;
     content: '\f058';
     font-size: 35px;
@@ -230,26 +256,32 @@ h1 {
     display: inline-block;
     position: absolute;
     left: 3px;
-}
+} */
 
 /* aside boxes 2 -> social network buttons */
 .call-to-share {
-    font-size: 20px;
-    font-weight: 700;
     letter-spacing: -0.5px;
     text-transform: uppercase;
     text-align: center;
     position: relative;
 }
 
-.call-to-share::before {
+.call-to-share span {
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 12px;
+    position: relative;
+}
+
+.call-to-share span::before {
     content: '\f054';
     display: inline-block;
     font-family: FontAwesome;
     color: inherit;
     font-size: 12px;
+    font-weight: inherit;
     position: absolute;
-    left: 39px;
+    left: 0;
     top: 7px;
 }
 
@@ -263,6 +295,22 @@ h1 {
     border-color: #3b5998;
 }
 
+.btn-fb span,
+.btn-tw span,
+.btn-mail span {
+    padding-left: 40px;
+}
+
+.btn-fb span::before,
+.btn-tw span::before,
+.btn-mail span::before {
+    font-size: 25px;
+}
+
+.btn-fb span::before {
+    content: '\f39e';
+}
+
 .btn-fb:hover {
     background-color: #fff;
     color: #3b5998;
@@ -271,6 +319,10 @@ h1 {
 .btn-tw {
     background-color: #00aae4;
     border-color: #00aae4;
+}
+
+.btn-tw span::before {
+    content: '\f099';
 }
 
 .btn-tw:hover {
@@ -282,6 +334,10 @@ h1 {
     background-color: #fff;
     border-color: #dfdfdf;
     color: #332c2c;
+}
+
+.btn-mail span::before {
+    content: '\f0e0';
 }
 
 .btn-mail:hover {

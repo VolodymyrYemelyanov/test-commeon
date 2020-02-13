@@ -19,9 +19,9 @@
       <main class="main">
         <section>
           <article class="article">
-            <div class="article__img">
+            <div class="article__img-vrap">
               <img
-                class="article_img"
+                class="article__img"
                 src="https://www.commeon.com/sites/default/files/styles/projet_image_principale_700/public/Decouplage_dessin_1_web.jpeg?itok=3lYupnuH"
                 alt="article image"
               />
@@ -73,9 +73,15 @@
         <div class="btn-vrap">
           <a class="btn btn-red" href="#"><span>Je fais un don</span></a>
         </div>
-        <div class="donat-day-left">
-          <p>7 donateurs</p>
-          <p>33 Jours Restants</p>
+        <div class="donat-nmbr-day-left">
+          <p class="donat-nmbr">
+            <img src="./svg/picto_vignette_commeon.svg" alt="commeon icon" /> 7
+            donateurs
+          </p>
+          <p class="day-left">
+            <img src="./svg/picto_vignette_duree.svg" alt="hourglass icon" /> 33
+            Jours Restants
+          </p>
         </div>
         <div class="ad aside-box">
           <div class="ad-link">
@@ -86,8 +92,12 @@
               <p>
                 <a href="#">voyons voir | art contemporain et territoire </a>
               </p>
-              <p class="ad-link__text-explanation">Marseille</p>
               <p class="ad-link__text-explanation">
+                <img src="./img/marker-map.png" alt="marker-map icon" />
+                Marseille
+              </p>
+              <p class="ad-link__text-explanation">
+                <img src="./svg/deduction.svg" alt="deduction icon" />
                 Les dons donnent droit à une réduction fiscale
               </p>
             </div>
@@ -95,6 +105,7 @@
           <div class="ad__cagnotte">
             <h4>Cagnotte officielle</h4>
             <p>
+              <img src="./img/picto_cagnotte_check.png" alt="" />
               Les dons sont versés directement à voyons voir | art contemporain
               et territoire
             </p>
@@ -102,17 +113,21 @@
         </div>
         <div class="aside-box">
           <p class="call-to-share">
-            Aidez notre cagnotte en partageant la page !
+            <span>Aidez notre cagnotte en partageant la page !</span>
           </p>
           <div class="social-button">
-            <a href="#" target="_blank" class="btn btn-fb">Partager</a>
+            <a href="#" target="_blank" class="btn btn-fb"
+              ><span>Partage</span></a
+            >
           </div>
           <div class="social-button">
-            <a href="#" target="_blank" class="btn btn-tw">Tweeter</a>
+            <a href="#" target="_blank" class="btn btn-tw"
+              ><span>Tweete</span></a
+            >
           </div>
-          <div>
+          <div class="social-button">
             <a href="#" target="_blank" class="btn btn-mail"
-              >Partager le lien</a
+              ><span>Partager le lien</span></a
             >
           </div>
         </div>
