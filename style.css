@@ -1,345 +1,479 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
 
 p {
-    color: #332c2c;
+  color: #332c2c;
 }
 
 .container {
-    max-width: 1270px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+  max-width: 1270px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 h1 {
-    font-size: 40px;
-    color: #ed1c2f;
-    margin: 20px 0;
+  font-size: 40px;
+  color: #ed1c2f;
+  margin: 20px 0;
+}
+
+.aside-mobile-v {
+  display: none;
 }
 
 .main,
 .aside {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
 .main {
-    width: calc(100% / 3 * 2);
+  width: calc(100% / 3 * 2);
 }
 
 .aside {
-    width: calc(100% / 3);
+  width: calc(100% / 3);
 }
 
 /**** MAIN ****/
 .article__img-vrap {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .article__img {
-    max-width: 100%;
+  max-width: 100%;
+}
+
+.article_text-vrap {
+  margin-bottom: 30px;
 }
 
 .article_text {
-    font-size: 14px;
-    text-align: justify;
+  font-size: 14px;
+  text-align: justify;
 }
 
 /**** ASIDE ****/
 /* information about collection */
 .needed-actual-value {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .actual-value {
-    font-weight: 700;
-    max-width: 128px;
-    width: 100%;
-    position: relative;
+  font-weight: 700;
+  max-width: 128px;
+  width: 100%;
+  position: relative;
 }
 
 #actual-value {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .coin-sign {
-    font-size: 25px;
-    position: absolute;
-    top: -7px;
+  font-size: 25px;
+  position: absolute;
+  top: -7px;
 }
 
 .needed-value {
-    max-width: 170px;
-    width: 100%;
+  max-width: 170px;
+  width: 100%;
 }
 
 /* progress bar */
 .progressbar {
-    width: 100%;
-    height: 20px;
-    background-color: #eee;
-    border-radius: 10px;
-    overflow: hidden;
+  width: 100%;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .progressbar-value {
-    background-color: red;
-    height: inherit;
+  background-color: red;
+  height: inherit;
 }
 
 #percent-number {
-    color: #fff;
-    padding-left: 10px;
-    font-size: 13px;
-    font-weight: 700;
+  color: #fff;
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 /* donnation button */
 .btn-vrap {
-    width: 100%;
-    margin: 20px 0;
+  width: 100%;
+  margin: 20px 0;
 }
 
 .btn {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    padding: 12px;
-    text-align: center;
-    border: 5px solid #ed1c2f;
-    border-radius: 4px;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    transition: all .3s;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  border: 5px solid #ed1c2f;
+  border-radius: 4px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.3s;
 }
 
 .btn-red {
-    background-color: #ed1c2f;
-    border: 5px solid #ed1c2f;
+  background-color: #ed1c2f;
+  border: 5px solid #ed1c2f;
 }
 
 .btn-red:hover {
-    background-color: #fff;
-    color: #ed1c2f;
+  background-color: #fff;
+  color: #ed1c2f;
 }
 
 .btn span {
-    display: inline-block;
-    font-size: 20px;
-    position: relative;
-    padding-left: 20px;
+  display: inline-block;
+  font-size: 24px;
+  position: relative;
+  padding-left: 20px;
 }
 
 .btn span:before {
-    content: '\f054';
-    display: inline-block;
-    font-family: FontAwesome;
-    color: inherit;
-    font-size: 12px;
-    position: absolute;
-    left: 5px;
-    top: 50%;
-    transform: translateY(-50%);
+  content: '\f054';
+  display: inline-block;
+  font-family: FontAwesome;
+  color: inherit;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* days left */
 .donat-nmbr-day-left {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 .donat-nmbr-day-left p {
-    width: 50%;
-    display: flex;
-    align-items: center;
+  width: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .donat-nmbr-day-left img {
-    width: 37px;
-    margin-right: 7%;
+  width: 37px;
+  margin-right: 7%;
 }
-
 
 /* aside boxes 1 */
 .aside-box {
-    width: 100%;
-    background-color: #f0f0f0;
-    padding: 10px;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px;
 }
 
 .ad {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .ad-link {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 /* aside img-link */
 .ad-link__img {
-    width: 40%;
+  width: 39%;
+  margin-right: 2%;
 }
 
 .ad-link__img img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-/* aside boxes text */
+/* aside boxes text 'cagnotte'*/
 .ad-link__text {
-    width: 60%;
+  width: 59%;
 }
 
 .ad-link__text p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .ad-link__text a {
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    font-size: 15px;
-    color: #332c2c;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-size: 15px;
+  color: #332c2c;
 }
 
 .ad-link__text-explanation {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .ad-link__text-explanation img {
-    width: 30px;
-    margin-right: 5%;
+  width: 30px;
+  margin-right: 5%;
 }
 
 .ad__cagnotte {
-    background-color: #dce9d9;
-    padding: 10px;
-    position: relative;
+  background-color: #dce9d9;
+  padding: 10px;
+  position: relative;
 }
 
 .ad__cagnotte h4,
 .ad__cagnotte p {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 
 .ad__cagnotte h4 {
-    color: #24ae5f;
+  color: #24ae5f;
 }
 
 .ad__cagnotte img {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 10px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
 }
-
-/* .ad__cagnotte p::before {
-    font-family: FontAwesome;
-    content: '\f058';
-    font-size: 35px;
-    color: #24ae5f;
-    display: inline-block;
-    position: absolute;
-    left: 3px;
-} */
 
 /* aside boxes 2 -> social network buttons */
 .call-to-share {
-    letter-spacing: -0.5px;
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
 }
 
 .call-to-share span {
-    font-size: 20px;
-    font-weight: 700;
-    padding-left: 12px;
-    position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 12px;
+  position: relative;
 }
 
 .call-to-share span::before {
-    content: '\f054';
-    display: inline-block;
-    font-family: FontAwesome;
-    color: inherit;
-    font-size: 12px;
-    font-weight: inherit;
-    position: absolute;
-    left: 0;
-    top: 7px;
+  content: '\f054';
+  display: inline-block;
+  font-family: FontAwesome;
+  color: inherit;
+  font-size: 12px;
+  font-weight: inherit;
+  position: absolute;
+  left: 0;
+  top: 7px;
 }
 
 .social-button,
 .call-to-share {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .btn-fb {
-    background-color: #3b5998;
-    border-color: #3b5998;
+  background-color: #3b5998;
+  border-color: #3b5998;
 }
 
 .btn-fb span,
 .btn-tw span,
 .btn-mail span {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 
 .btn-fb span::before,
 .btn-tw span::before,
 .btn-mail span::before {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .btn-fb span::before {
-    content: '\f39e';
+  content: '\f39e';
 }
 
 .btn-fb:hover {
-    background-color: #fff;
-    color: #3b5998;
+  background-color: #fff;
+  color: #3b5998;
 }
 
 .btn-tw {
-    background-color: #00aae4;
-    border-color: #00aae4;
+  background-color: #00aae4;
+  border-color: #00aae4;
 }
 
 .btn-tw span::before {
-    content: '\f099';
+  content: '\f099';
 }
 
 .btn-tw:hover {
-    background-color: #fff;
-    color: #00aae4;
+  background-color: #fff;
+  color: #00aae4;
 }
 
 .btn-mail {
-    background-color: #fff;
-    border-color: #dfdfdf;
-    color: #332c2c;
+  background-color: #fff;
+  border-color: #dfdfdf;
+  color: #332c2c;
 }
 
 .btn-mail span::before {
-    content: '\f0e0';
+  content: '\f0e0';
 }
 
 .btn-mail:hover {
-    border-color: #332c2c;
+  border-color: #332c2c;
+}
+
+@media only screen and (max-width: 1295px) {
+  h1 {
+    margin: 20px 15px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main {
+    width: 58%;
+  }
+
+  .aside {
+    width: 42%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aside {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .aside-mobile-v {
+    display: block;
+    width: 100%;
+  }
+
+  /* information about collection */
+  .needed-actual-value {
+    justify-content: center;
+  }
+
+  .needed-value {
+    text-align: center;
+  }
+
+  /* days left */
+  .donat-nmbr-day-left p {
+    width: 37%;
+    justify-content: center;
+  }
+
+  .ad-link {
+    margin-bottom: 10px;
+  }
+
+  /* aside img-link */
+  .ad-link__img {
+    text-align: center;
+  }
+
+  .ad-link__title {
+    text-align: left;
+  }
+
+  /* aside boxes text 'cagnotte'*/
+  .ad__cagnotte {
+    text-align: left;
+  }
+
+  .ad__cagnotte img {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* aside boxes 2 -> social network buttons */
+  .aside-box {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .social-mobile {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .btn span:before {
+    position: relative;
+    transform: none;
+    left: auto;
+    right: auto;
+  }
+
+  .btn-fb span,
+  .btn-tw span,
+  .btn-mail span {
+    padding-left: 0;
+  }
+
+  .social-button {
+    width: 67px;
+    height: 62px;
+    margin: auto;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .social-button .btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-button .btn:hover {
+    opacity: 0.8;
+    background-color: #3b5998;
+    color: #fff;
+  }
+
+  .social-button .btn-fb:hover {
+    background-color: #3b5998;
+  }
+
+  .social-button .btn-tw:hover {
+    background-color: #00aae4;
+  }
+
+  .social-button .btn-mail:hover {
+    background-color: #fff;
+    border-color: #dfdfdf;
+    color: #332c2c;
+  }
+
+  .btn-red span:before {
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+  }
 }
