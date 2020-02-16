@@ -75,7 +75,7 @@ h1 {
   position: relative;
 }
 
-#actual-value {
+.actual-value__id {
   font-size: 40px;
 }
 
@@ -104,7 +104,7 @@ h1 {
   height: inherit;
 }
 
-#percent-number {
+.percent-number__id {
   color: #fff;
   padding-left: 10px;
   font-size: 13px;
