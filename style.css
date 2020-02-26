@@ -19,6 +19,7 @@ p {
 }
 
 h1 {
+  width: 100%;
   font-size: 40px;
   color: #ed1c2f;
   margin: 20px 0;
@@ -199,12 +200,54 @@ h1 {
 
 /* aside img-link */
 .ad-link__img {
+  position: relative;
   width: 39%;
   margin-right: 2%;
 }
 
+.rotate-img {
+    width: 100%;
+    height: 149px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all .7s;
+}
+
+.rotate-img__back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff7730;
+  transform: rotateY(180deg);
+}
+
+.btn-rotate {
+  width: 90%;
+  padding: 7px;
+  border-radius: 10px;
+  background: #fff;
+  border: 5px solid #dfdfdf;
+  color: #000;
+}
+
+.btn-rotate:hover {
+  border: 5px solid #000;
+  color: #000;
+}
+
+.ad-link__img:hover .rotate-img__front {
+  transform: rotateY(-180deg);
+}
+
+.ad-link__img:hover .rotate-img__back {
+  transform: rotateY(0deg);
+}
+
 .ad-link__img img {
-  max-width: 100%;
+  width: 100%;
 }
 
 /* aside boxes text 'cagnotte'*/
